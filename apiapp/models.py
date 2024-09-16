@@ -6,7 +6,7 @@ class Profile(models.Model):
     last_name = models.CharField(max_length=50, verbose_name='Apellido')
     profession = models.CharField(max_length=100, verbose_name='Profesion')
     bio = RichTextField(verbose_name='Biografia')
-    profile_picture = models.ImageField(upload_to='profile_pics/', blank=True, null='True', verbose_name='Foto Perfil')
+    profile_picture = models.ImageField(upload_to='foto_perfil/', blank=True, null='True', verbose_name='Foto Perfil')
 
     class Meta:
         verbose_name = 'Perfil'

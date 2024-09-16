@@ -6,7 +6,7 @@ const Profile = () => {
 
   useEffect(() => {
     axios
-      .get("/api/profiles/1/") 
+      .get("/api/profiles/1/")
       .then((response) => {
         setProfile(response.data);
       })
@@ -19,7 +19,7 @@ const Profile = () => {
     <div className="row mb-5">
       {profile ? (
         <>
-          <div className="col-md-4">
+          <div className="col-md-4 d-flex justify-content-center align-items-center">
             <img
               src={profile.profile_picture}
               alt="Profile"
