@@ -16,16 +16,18 @@ const Skills = () => {
 
   return (
     <div>
-      <h3 className="mb-4">Habilidades</h3>
+      <h3 className="mb-4">
+        <strong>Habilidades</strong>
+      </h3>
       <div className="row">
-        {skills.map(skill => (
+        {skills.map((skill) => (
           <div key={skill.id} className="col-md-4 mb-3">
             <div className="card">
-              <img 
-                src={skill.icon_url} 
-                className="card-img-top" 
-                alt={`${skill.name} icon`} 
-                style={{ height: '100px', objectFit: 'contain' }} 
+              <img
+                src={skill.icon_url}
+                className="card-img-top"
+                alt={`${skill.name} icon`}
+                style={{ height: "100px", objectFit: "contain" }}
               />
               <div className="card-body text-center">
                 <h5 className="card-title">{skill.name}</h5>

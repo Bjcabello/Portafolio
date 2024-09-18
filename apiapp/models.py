@@ -10,7 +10,7 @@ class Profile(models.Model):
 
     class Meta:
         verbose_name = 'Perfil'
-        verbose_name_plural = 'Perfils'
+        verbose_name_plural = 'Perfiles'
 
     def __str__(self):
         return f'{self.name} {self.last_name}'

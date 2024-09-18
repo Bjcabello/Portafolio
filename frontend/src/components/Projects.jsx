@@ -16,17 +16,28 @@ const Projects = () => {
 
   return (
     <div>
-      <h3 className="mb-4">Proyectos</h3>
+      <h3 className="mb-4">
+        <strong>Proyectos</strong>
+      </h3>
       <div className="row">
-        {projects.map(project => (
+        {projects.map((project) => (
           <div key={project.id} className="col-md-6 mb-4">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">{project.title}</h5>
+                <h5 className="card-title text-center">
+                  <strong>{project.title}</strong>
+                </h5>
                 <p className="card-text">{project.description}</p>
-                <p className="card-text"><strong>Tecnologías:</strong> {project.technologies}</p>
+                <p className="card-text">
+                  <strong>Tecnologías:</strong> {project.technologies}
+                </p>
                 {project.project_url && (
-                  <a href={project.project_url} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  <a
+                    href={project.project_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary"
+                  >
                     Ver Proyecto
                   </a>
                 )}
